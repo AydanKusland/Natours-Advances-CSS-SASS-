@@ -118,6 +118,10 @@ body {
   .section-features > * {
     transform: skewY(7deg); }
 
+.section-stories {
+  padding: 15rem 0;
+  background-color: aqua; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
