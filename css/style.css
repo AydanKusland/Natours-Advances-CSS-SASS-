@@ -124,6 +124,9 @@ body {
   .section-features > * {
     transform: skewY(7deg); }
 
+.section-stories {
+  padding: 15rem 0;
+  background-color: aqua; }
 .section-tours {
   margin-top: -10rem;
   background-color: #f7f7f7;
