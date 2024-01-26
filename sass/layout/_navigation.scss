@@ -15,6 +15,15 @@
 		box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
 		text-align: center;
 		cursor: pointer;
+
+		@include respond(tab-port) {
+			top: 4.5rem;
+			right: 4.5rem;
+		}
+		@include respond(phone) {
+			top: 3rem;
+			right: 3rem;
+		}
 	}
 
 	&__background {
@@ -28,8 +37,15 @@
 			$color-primary-light,
 			$color-primary-dark
 		);
-		z-index: 1000;
 		transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+		@include respond(tab-port) {
+			top: 4.7rem;
+			right: 4.7rem;
+		}
+		@include respond(phone) {
+			top: 3.2rem;
+			right: 3.2rem;
+		}
 	}
 
 	&__nav {
@@ -93,6 +109,7 @@
 
 	&__checkbox:checked ~ &__background {
 		transform: scale(80);
+		z-index: 500;
 	}
 	&__checkbox:checked ~ &__nav {
 		opacity: 1;

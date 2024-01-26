@@ -6,6 +6,12 @@
 	}
 }
 
+@mixin absCenter {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
 @mixin respond-phone {
 	@media (max-width: 600px) {
 		@content;
